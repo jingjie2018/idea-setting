@@ -1,0 +1,11 @@
+<application>
+  <component name="AppStorage">
+    <histories>
+      <item value="* {@code FactoryBean} that creates an MyBatis {@code SqlSessionFactory}. * This is the usual way to set up a shared MyBatis {@code SqlSessionFactory} in a Spring application context; * the SqlSessionFactory can then be passed to MyBatis-based DAOs via dependency injection. * * Either {@code DataSourceTransactionManager} or {@code JtaTransactionManager} can be used for transaction * demarcation in combination with a {@code SqlSessionFactory}. JTA should be used for transactions * which span multiple databases or when container managed transactions (CMT) are being used." />
+    </histories>
+  </component>
+  <component name="Settings">
+    <option name="ignoreRegExp" value="" />
+    <option name="translator" value="ai.youdao" />
+  </component>
+</application>
