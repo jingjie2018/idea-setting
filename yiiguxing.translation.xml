@@ -8,5 +8,11 @@
     <option name="disableAppKeyNotification" value="true" />
     <option name="ignoreRegExp" value="" />
     <option name="translator" value="ai.youdao" />
+    <option name="youdaoTranslateSettings">
+      <youdao-translate>
+        <option name="appId" value="6386d0780ccdd97b" />
+        <option name="appKeyConfigured" value="true" />
+      </youdao-translate>
+    </option>
   </component>
 </application>
