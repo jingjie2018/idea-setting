@@ -1,6 +1,12 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="/** * This value may be passed as the argument to the method {@code createSession(int sessionMode)} on the * {@code Connection} object to specify that the session should use a local transaction. * * &lt;p&gt; * This value is returned from the method {@code getAcknowledgeMode} if the session is using a local transaction, * irrespective of whether the session was created by calling the method {@code createSession(int sessionMode)} or the * method {@code createSession(boolean transacted, int acknowledgeMode)}. * * @since JMS 1.1 */" />
+      <item value="* This acknowledgment mode instructs the session to lazily acknowledge the delivery of messages. This is likely to * result in the delivery of some duplicate messages if the JMS provider fails, so it should only be used by consumers * that can tolerate duplicate messages. Use of this mode can reduce session overhead by minimizing the work the session * does to prevent duplicates. */" />
+      <item value="With this acknowledgment mode, the client acknowledges a consumed message by calling the message's * {@code acknowledge} method. Acknowledging a consumed message acknowledges all messages that the session has consumed. * * &lt;p&gt; * When client acknowledgment mode is used, a client may build up a large number of unacknowledged messages while * attempting to process them. A JMS provider should provide administrators with a way to limit client overrun so that * clients are not driven to resource exhaustion and ensuing failure when some resource they are using is temporarily * blocked." />
+      <item value="With this acknowledgment mode, the session automatically acknowledges a client's receipt of a message either when the * session has successfully returned from a call to {@code receive} or when the message listener the session has called * to process the message successfully returns." />
+      <item value="Set the JMS acknowledgement mode that is used when creating a JMS * {@link Session} to send a message. * &lt;p&gt;Default is {@link Session#AUTO_ACKNOWLEDGE}. * &lt;p&gt;Vendor-specific extensions to the acknowledgment mode can be set here as well. * &lt;p&gt;Note that inside an EJB, the parameters to the * {@code create(Queue/Topic)Session(boolean transacted, int acknowledgeMode)} method * are not taken into account. Depending on the transaction context in the EJB, * the container makes its own decisions on these values. See section 17.3.5 * of the EJB spec." />
+      <item value="* Configure the destination accessor with knowledge of the JMS domain used. * Default is Point-to-Point (Queues). * &lt;p&gt;This setting primarily indicates what type of destination to resolve * if dynamic destinations are enabled. * @param pubSubDomain &quot;true&quot; for the Publish/Subscribe domain ({@link javax.jms.Topic Topics}), * &quot;false&quot; for the Point-to-Point domain ({@link javax.jms.Queue Queues}) * @see #setDestinationResolver" />
       <item value="For more information and more examples, see {@link org.junit.rules.TestRule}." />
       <item value="Run `spring-javaformat:apply` to fix." />
       <item value="* The main class to import in order to access all available {@link MockMvcBuilder MockMvcBuilders}." />
@@ -10,8 +16,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="5" />
-        <entry key="ENGLISH" value="5" />
+        <entry key="CHINESE" value="11" />
+        <entry key="ENGLISH" value="11" />
       </map>
     </option>
   </component>
