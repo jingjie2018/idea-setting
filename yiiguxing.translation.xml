@@ -1,6 +1,8 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="/** * Interface used to indicate that a bean should &lt;em&gt;run&lt;/em&gt; when it is contained within * a {@link SpringApplication}. Multiple {@link ApplicationRunner} beans can be defined * within the same application context and can be ordered using the {@link Ordered} * interface or {@link Order @Order} annotation." />
+      <item value="* Interface used to indicate that a bean should &lt;em&gt;run&lt;/em&gt; when it is contained within * a {@link SpringApplication}. Multiple {@link ApplicationRunner} beans can be defined * within the same application context and can be ordered using the {@link Ordered} * interface or {@link Order @Order} annotation." />
       <item value="/** * This value may be passed as the argument to the method {@code createSession(int sessionMode)} on the * {@code Connection} object to specify that the session should use a local transaction. * * &lt;p&gt; * This value is returned from the method {@code getAcknowledgeMode} if the session is using a local transaction, * irrespective of whether the session was created by calling the method {@code createSession(int sessionMode)} or the * method {@code createSession(boolean transacted, int acknowledgeMode)}. * * @since JMS 1.1 */" />
       <item value="* This acknowledgment mode instructs the session to lazily acknowledge the delivery of messages. This is likely to * result in the delivery of some duplicate messages if the JMS provider fails, so it should only be used by consumers * that can tolerate duplicate messages. Use of this mode can reduce session overhead by minimizing the work the session * does to prevent duplicates. */" />
       <item value="With this acknowledgment mode, the client acknowledges a consumed message by calling the message's * {@code acknowledge} method. Acknowledging a consumed message acknowledges all messages that the session has consumed. * * &lt;p&gt; * When client acknowledgment mode is used, a client may build up a large number of unacknowledged messages while * attempting to process them. A JMS provider should provide administrators with a way to limit client overrun so that * clients are not driven to resource exhaustion and ensuing failure when some resource they are using is temporarily * blocked." />
@@ -16,8 +18,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="11" />
-        <entry key="ENGLISH" value="11" />
+        <entry key="CHINESE" value="13" />
+        <entry key="ENGLISH" value="13" />
       </map>
     </option>
   </component>
