@@ -1,6 +1,11 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="* Returns the Stream Handler. * @param protocol the protocol to use" />
+      <item value="* Determines whether the access request indicated by the * specified permission should be allowed or denied, based on * the current AccessControlContext and security policy. * This method quietly returns if the access request * is permitted, or throws an AccessControlException otherwise. The * getPermission method of the AccessControlException returns the * {@code perm} Permission object instance. * * @param perm the requested permission. * * @exception AccessControlException if the specified permission * is not permitted, based on the current security policy. * @exception NullPointerException if the specified permission * is {@code null} and is checked based on the * security policy currently in effect." />
+      <item value="* &lt;p&gt; * This method quietly returns if the access request * is permitted, or throws a suitable AccessControlException otherwise. * * @param perm the requested permission. * * @exception AccessControlException if the specified permission * is not permitted, based on the current security policy and the * context encapsulated by this object. * @exception NullPointerException if the permission to check for is null." />
+      <item value="* Determines whether the access request indicated by the * specified permission should be allowed or denied, based on * the security policy currently in effect, and the context in * this object. The request is allowed only if every ProtectionDomain * in the context implies the permission. Otherwise the request is * denied." />
+      <item value="privileged" />
       <item value="The bean 'eurekaRegistration', defined in class path resource [org/springframework/cloud/netflix/eureka/EurekaClientAutoConfiguration$EurekaClientConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/cloud/netflix/eureka/EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.class] and overriding is disabled." />
       <item value="11&#10;44&#10;22&#10;33" />
       <item value="* &lt;p&gt;&lt;b&gt;Use of this field by subclasses is optional.&lt;/b&gt; If a subclass * wishes to provide fail-fast iterators (and list iterators), then it * merely has to increment this field in its {@code add(int, E)} and * {@code remove(int)} methods (and any other methods that it overrides * that result in structural modifications to the list). A single call to * {@code add(int, E)} or {@code remove(int)} must add no more than * one to this field, or the iterators (and list iterators) will throw * bogus {@code ConcurrentModificationExceptions}. If an implementation * does not wish to provide fail-fast iterators, this field may be * ignored." />
@@ -23,8 +28,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="18" />
-        <entry key="ENGLISH" value="18" />
+        <entry key="CHINESE" value="23" />
+        <entry key="ENGLISH" value="23" />
       </map>
     </option>
   </component>
